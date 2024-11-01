@@ -6,13 +6,6 @@ myImage.onclick = () => {
    if(mySrc === "slika.jpg"){
       myImage.setAttribute("src","pigs.jpg");
    }
-   if(mySrc === "pigs.jpg"){
-      myImage.setAttribute("src","bugs.jpg");
-   }
-   if(mySrc ==="bugs.jpg"){
-      myImage.setAttribute("src","slika.jpg");
-   }
-   
     /*const mySrc = myImage.getAttribute("src");
     if(mySrc == "slika.jpg"){
         myImage.setAttribute("src","bugs.jpg");
