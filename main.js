@@ -1,16 +1,27 @@
 const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-    if(mySrc == "slika.jpg"){
+   const mySrc = myImage.getAttribute("src");
+    if(mySrc === "slika.jpg")
+        myImage.setAttribute("src","pigs.jpg");
+    else if(mySrc === "pigs.jpg")
         myImage.setAttribute("src","bugs.jpg");
-    }
-    if(mySrc == "pigs.jpg"){
-        myImage.setAttribute("src","bugs.jpg");
-    }
-    if(mySrc == "bugs.jpg"){
+    else
         myImage.setAttribute("src","slika.jpg");
     }
+
+  /*const mySrc = myImage.getAttribute("src");
+    if(mySrc === "slika.jpg"){
+        myImage.setAttribute("src","pigs.jpg");
+        myImage.setAttribute("alt","pigs");
+    }
+    if(mySrc === "pigs.jpg"){
+        myImage.setAttribute("src","bugs.jpg");
+        myImage.setAttribute("alt","bugs");
+    }
+    if(mySrc === "bugs.jpg"){
+        myImage.setAttribute("src","slika.jpg");
+    }*/
 }
 
 let myButton = document.querySelector("button");
